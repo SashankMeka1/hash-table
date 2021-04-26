@@ -7,7 +7,7 @@ class Node{
 	Node* getNext();
 	Student* getStudent();
 	void setNext(Node * node);
-	private:
+	private://variables and functions
 	Node * next;
 	Student *student;
 };

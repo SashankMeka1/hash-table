@@ -5,7 +5,7 @@
 using namespace std;
 int main(){
 	char input[150];
-	hash_table * table = new hash_table(100);
+	hash_table * table = new hash_table(100);//get input and just run the functions
 	while (true){
 		cout << "ADD, DELETE, QUIT, FILE, OR PRINT"<<endl;
 		cin.getline(input, 150);
@@ -23,7 +23,7 @@ int main(){
 			return 0;
 		}
 		else if(!strcmp(input, "DELETE")){
-			cout << "ID?"<<endl;
+			cout << "ID?"<<endl;//if delete then get the input and delete the node
 			cin >> input;
 			cin.ignore(100, '\n');
 			table->del(nullptr, atoi(input));
